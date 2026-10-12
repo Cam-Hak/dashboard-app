@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard</title>
+<meta name="description" content="Dashboard is a small personal Windows desktop app that shows countdowns, chores, game times, the weather and unread Gmail.">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --accent: #2563eb; --card: #f5f6f8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #18191b; --fg: #ececec; --muted: #a3a7ad; --accent: #6ea0ff; --card: #222427; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; }
+  .lede { color: var(--muted); margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  .card { background: var(--card); border-radius: 10px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: .9rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Dashboard</h1>
+  <p class="lede">A small personal desktop app for Windows that keeps everyday information in one window.</p>
+
+  <p>Dashboard shows:</p>
+  <ul>
+    <li>countdowns to upcoming dates, and "days since" reminders for chores;</li>
+    <li>game times and scores for followed sports teams;</li>
+    <li>the local weather forecast;</li>
+    <li>a summary of unread Gmail messages: sender, subject, a one-line preview, and time received.</li>
+  </ul>
+
+  <div class="card">
+    <strong>How it uses Gmail.</strong> With the owner's permission, Dashboard uses read-only access
+    (<code>gmail.readonly</code>) to list unread inbox messages and show their sender, subject, preview and time.
+    It never sends, deletes, labels or marks mail as read. The data stays on the owner's own computer and is not
+    shared with anyone. See the <a href="privacy.html">privacy policy</a> for details.
+  </div>
+
+  <p>Dashboard is a personal project. It runs only on its owner's PC and is not offered as a service to the public.</p>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
